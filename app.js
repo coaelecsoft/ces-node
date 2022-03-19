@@ -6,6 +6,9 @@ const app = express()
 app.get('/', (req, res) => {
     res.send('My node.js app')
 })
+app.get('/13', (req, res) => {
+    res.send('ovo je broj 13')
+})
 
 const port = process.env.PORT || '8080'
 

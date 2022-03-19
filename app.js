@@ -7,9 +7,9 @@ app.get('/', (req, res) => {
     res.send('My node.js app')
 })
 
-   
+const port = process.env.PORT || '8080'
 
-app.listen(3030)
+app.listen(port, ()=>console.log(`Server start on port: ${port}`))
 
 /*
 app.use(express.static('public'))
